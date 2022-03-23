@@ -22,21 +22,25 @@ export  function  allPhotos(req,res) {
 
 export  async function  newPhotos(req,res){   
   const data = req.body  
-  console.log('Post ');
+  console.log('Post data', data);
+  // console.log('Post ', data,);
 
-  if (!data.photo) {
+  const file = req.file;
+  console.log(file);
+
+  if (!file) {
     return res.status(406).send('Photo is missing')
 
   }else{
-    const photo =  new Photo({ 
+    // const photo =  new Photo({ 
    
-      photo: data.photo,
+    //   photo: file,
       
-    }) 
+    // }) 
 
-    await photo.save()
+    // await photo.save()
   
-    res.status(201).send('There was a new photo added with the '+ data.photo +'categorie.')
+    res.status(201).send('There was a new photo added with the '+ file.name +'categorie.')
   }
 }  
 // post  ↑
