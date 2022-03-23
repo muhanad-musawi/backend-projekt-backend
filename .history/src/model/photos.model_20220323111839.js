@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const PhotoSchema = new mongoose.Schema({
    
-  path: {type:String, required: true},
+  categorie: {type:String, required: true},
   
 })
 

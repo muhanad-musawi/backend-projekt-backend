@@ -34,7 +34,7 @@ export  async function  newPhotos(req,res){
   }else{
      const photo =  new Photo({ 
    
-      path: file.path,
+       photo: file.path,
       
      }) 
 

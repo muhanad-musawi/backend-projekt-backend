@@ -32,13 +32,13 @@ export  async function  newPhotos(req,res){
     return res.status(406).send('Photo is missing')
 
   }else{
-     const photo =  new Photo({ 
+    // const photo =  new Photo({ 
    
-      path: file.path,
+    //   photo: file.path:,
       
-     }) 
+    // }) 
 
-    await photo.save()
+    // await photo.save()
   
     res.status(201).send('There was a new photo added with the '+ file.name +'categorie.')
   }
