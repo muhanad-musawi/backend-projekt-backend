@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/muhanad-musawi/backend-projekt-backend#readme",
   "dependencies": {
+    "cloudinary": "^1.28.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
