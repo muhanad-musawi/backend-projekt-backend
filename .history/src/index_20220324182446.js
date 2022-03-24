@@ -5,7 +5,6 @@ import 'dotenv/config';
 import cors from "cors"; 
 import imgCategories from './routes/imgCategories.routes.js'  
 import photos from './routes/photos.routes.js' 
-import login from './routes/auth.routes.js'
 //import {seedTestData} from '../database.mongoose.js'
  
 

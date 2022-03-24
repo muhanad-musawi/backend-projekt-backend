@@ -5,7 +5,6 @@ import 'dotenv/config';
 import cors from "cors"; 
 import imgCategories from './routes/imgCategories.routes.js'  
 import photos from './routes/photos.routes.js' 
-import login from './routes/auth.routes.js'
 //import {seedTestData} from '../database.mongoose.js'
  
 
@@ -39,8 +38,6 @@ connection.once('open', ()=> {
 app.use('/photo-gallery', imgCategories) 
 
 app.use('/photos', photos )
-
-app.use('/login', login)
 
 //start server 
 app.listen(PORT, () => {
