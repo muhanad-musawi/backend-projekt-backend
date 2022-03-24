@@ -52,10 +52,10 @@ export  async function  deletePhoto(req,res) {
   const id = req.params.id
 console.log('Id',id);
   const result = await  Photo.deleteOne({ _id: id})
-if (result.deletedCount === 0) {
+if (categories.deletedCount === 0) {
   res.status(404).send( `Id ${id} not found`)
 }else{
-  res.status(200).json('Photo deletet')
+  res.status(200).json(Photo)
 }
 } 
 

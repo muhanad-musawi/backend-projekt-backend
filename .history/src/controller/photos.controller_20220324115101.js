@@ -55,7 +55,7 @@ console.log('Id',id);
 if (result.deletedCount === 0) {
   res.status(404).send( `Id ${id} not found`)
 }else{
-  res.status(200).json('Photo deletet')
+  res.status(200).json('Photo ')
 }
 } 
 
