@@ -7,7 +7,7 @@ export  function  allPhotos(req,res) {
 
 
   const selectedCategory = req.params.selectedCategory
-  Photo.find({photoCategorie: selectedCategory}, (err,photos)=>{
+  Photo.find({photoCategorie:}, (err,photos)=>{
     //console.log("Hallo hier bin ich");
     if(err){
       res.status(401).send(err);

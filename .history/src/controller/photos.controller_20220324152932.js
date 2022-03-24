@@ -6,8 +6,8 @@ import uploads from "./cloudinaryUploader.js";
 export  function  allPhotos(req,res) {
 
 
-  const selectedCategory = req.params.selectedCategory
-  Photo.find({photoCategorie: selectedCategory}, (err,photos)=>{
+  const id = req.params.id
+  Photo.find({}, (err,photos)=>{
     //console.log("Hallo hier bin ich");
     if(err){
       res.status(401).send(err);
