@@ -20,7 +20,7 @@ export  async function  loginAdmin(req,res){
    const Admin = await  Admin.findOne({ adminName: req.body.adminName , active: true })
   
         if (!Admin) { 
-          if (err || Admin.adminPassword !== req.body.adminPassword ) { 
+          if (err || admin.adminPassword !== req.body.adminPassword ) { 
       
             res.status(400).send( err + 'Admin login failed')
             

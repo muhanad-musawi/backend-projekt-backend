@@ -5,7 +5,7 @@ const AdminSchema = new mongoose.Schema({
    
   adminName: {type:String, required: true},
   adminPassword: {type:String, required: true}, 
-  active: {type: Boolean , default: false},
+  active: {type:Boolean}
   
 })
 

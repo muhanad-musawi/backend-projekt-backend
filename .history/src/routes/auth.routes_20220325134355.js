@@ -8,10 +8,8 @@ const router = new Router();
 
 // localhost:4000/login -> Endpunkt 
 
-router.route('/admin/register').post(registerAdmin);
- 
  router.route('/admin/login').post(loginAdmin);  
- 
+ router.route('/admin/register').post(registerAdmin); 
  // Zukunft User Login
  // Zukunft User Login
  
